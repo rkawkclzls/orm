@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Study Form</title>
+<style>
+    td, th{
+      border: 1px solid black;
+    }
+    table{
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .colSecond{
+      width: 20%;
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+
+<h2>HTML 스터디를 함께하는 이유는?</h2>
+
+<form action="/submit-your-reason">
+  <input type="radio" id="no jam" name="study_reason" value="no jam">
+  <label for="hard">노잼이다</label><br>
+  <input type="radio" id="hard" name="study_reason" value="hard">
+  <label for="hard">너무 어렵다</label><br>
+  <input type="radio" id="나는 네가 지난 여름에 한 일을 알고 있다" name="study_reason" value="나는 네가 지난 여름에 한 일을 알고 있다">
+  <label for="know_weekend">나는 네가 지난 여름에 한 일을 알고 있다</label><br>
+
+  <h2>만약 다른 스터디를 하고 싶다면?</h2>
+  <label for="study_options">자바스크립트:</label>
+  <select id="study_options" name="study_options">
+    
+    <option value="javascript">자바스크립트</option>
+    <option value="css">CSS</option>
+    <option value="design">디자인</option>
+  </select><br>
+
+  <h2>마지막으로 하고싶은 말</h2>
+  <textarea id="final_words" name="final_words" rows="4" cols="50">
+GG
+  </textarea><br>
+
+  <input type="submit" value="전송하기">
+  <input type="reset" value="다시 작성하기">
+</form>
+
+</body>
+</html>
