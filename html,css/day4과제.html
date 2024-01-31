@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Layout</title>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100vh;
+  }
+  .row {
+    display: flex;
+    justify-content: flex-start; 
+    width: 100%; 
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; 
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .A { background-color: blue; }
+  .B { background-color: red; }
+  .C { background-color: yellow; }
+  .D { background-color: blue; }
+  .E { background-color: yellow; }
+  .F { background-color: blue; }
+  .G { background-color: red; }
+  .H { background-color: yellow; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="box A">A</div>
+    <div class="box D">D</div>
+    <div class="box H">H</div>
+  </div>
+  <div class="row">
+    <div class="box B">B</div>
+    <div class="box G">G</div>
+  </div>
+  <div class="row">
+    <div class="box C">C</div>
+    <div class="box E">E</div>
+    <div class="box F">F</div>
+  </div>
+</div>
+</body>
+</html>
